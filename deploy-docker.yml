@@ -2,10 +2,14 @@
 - hosts: webservers
   become: True
   tasks:
-    - name: Install python3 pip
+    - name: Install python3-pip
       yum:
         name: python3-pip
         state: present
+    - name: Install python3
+        yum:
+          name: python3
+          state: present
     - name: Install docker
       yum:
         name: docker
@@ -15,6 +19,10 @@
         name: docker
         state: started
         enabled: yes
+    - name: Install docker-py python module
+      pip:
+        name: docker-py
+        state: present
     - name: Start the container
       docker_container:
         name: rpcapp
