@@ -1,2 +1,3 @@
 [dev]
-172.31.34.192 ansible_user=ec2-user
+172.31.33.90 ansible_user=managedhost
+
