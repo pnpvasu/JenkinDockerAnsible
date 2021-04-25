@@ -2,6 +2,10 @@
 - hosts: webservers
   become: True
   tasks:
+    - name: Install docker
+      yum:
+        name: docker
+        state: present
     - name: start docker
       service:
         name: docker
@@ -14,4 +18,3 @@
         state: started
         published_ports:
           - 0.0.0.0:8080:8080
-
