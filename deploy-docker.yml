@@ -18,7 +18,8 @@
     - name: Install docker-py python module
       pip:
         name: docker-py
-        state: present
+        executable: pip3
+        state: latest
     - name: Start the container
       docker_container:
         name: rpcapp
