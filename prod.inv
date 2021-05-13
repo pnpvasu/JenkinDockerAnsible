@@ -1,2 +1,2 @@
 [webservers]
-172.31.17.92 ansible_user=prasanna
+172.31.23.221 ansible_user=prasanna
