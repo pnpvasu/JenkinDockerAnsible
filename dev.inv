@@ -1,3 +1,3 @@
 [webservers]
-172.31.17.92 ansible_user=prasanna
+172.31.30.88 ansible_user=vasudevan
 
