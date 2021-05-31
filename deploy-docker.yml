@@ -22,7 +22,7 @@
     - name: Start the container
       docker_container:
         name: rpcapp
-        image: "mpmrraj28/javadevops2:{{DOCKER_TAG}}"
+        image: "160917/devops310517:12345"
         state: started
         published_ports:
           - 8080:8080
